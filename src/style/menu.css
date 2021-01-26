@@ -1,0 +1,168 @@
+.main_menu{
+    margin: 8rem auto;
+    width: 90vw;
+    overflow: hidden;
+}
+.section_margin_top{
+    margin-top: 4rem;
+}
+
+/* KOI */
+
+.menu{
+    background-color: #F4EFDE;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    border-radius: 15px;
+}
+
+.motif_koi{
+    background-image: url("../img/elipse_rouge.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: fit-content;
+    height: 20vmin;
+    
+}
+.motif_koi >* {
+    padding-left: 5rem;
+}
+.motif_koi h1{
+    font-weight: 900;
+    margin: 9rem 0 1rem 0;
+}
+
+.sous_titre{
+    margin-bottom: 1rem ;
+}
+
+.first_letter::first-letter{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+.articles{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 3rem;
+    width: 100%;
+    margin: auto;
+}
+
+
+.nom_article{
+    text-align: center;
+    font-family: "Chivo";
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nom_article:hover .img_article{
+    height: 28vmin;
+}
+
+.nom_article_koi{
+    color: #AF271C;
+}
+
+.img_article{
+    height: 26vmin;
+    display: block;
+    margin: auto;
+}
+
+.desc_article{
+    text-align: center;
+    margin: auto;
+    width: 12.8rem;
+}
+
+/* ASAHONA */
+
+.motif_asahona{
+    background-image: url("../img/motif_vert.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: fit-content;
+    height: 23vmin;
+}
+
+.motif_asahona >*{
+    margin-left: 9rem;
+    text-align: end;
+}
+
+.motif_asahona :nth-child(1){
+    margin-top: 0;
+}
+
+.nom_article_asahona{
+    color: #1D551B;
+}
+
+
+/* SEIGAIHA */
+
+.motif_seigaiha{
+    background-image: url("../img/motif_bleu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: fit-content;
+    height: 23vmin;
+}
+
+.motif_seigaiha >*{
+    margin-left: 10rem;
+    text-align: end;
+}
+
+.motif_seigaiha :nth-child(1){
+    margin-top: 0;
+}
+
+.nom_article_seigaiha{
+    color: #1B3355;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 993px){
+    .main_menu{
+        margin-top: 1rem ;
+        width: 95vw;
+    }
+    .menu{
+        display: block;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .section_margin_top{
+        margin-top: 4rem;
+    }
+    .motif_koi,.motif_asahona,.motif_seigaiha{
+        margin: 0 auto 5rem auto;
+
+    }
+    .articles{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+@media screen and (max-width: 710px){
+    .articles{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .motif_koi, .motif_asahona, .motif_seigaiha{
+        margin-bottom: 8rem;
+    }
+}
+

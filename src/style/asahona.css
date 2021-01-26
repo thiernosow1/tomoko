@@ -1,0 +1,49 @@
+.asahona {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: -42px;
+}
+.margin_bottom_75px{
+    margin-bottom: 7.5rem;
+}
+.asahona_left{
+    margin-left: 3rem;
+}
+.asahona_right{
+    margin-right: 3rem;
+}
+.asahona_left p{
+    font-family: "Roboto";
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: left;
+
+}
+.couverture_asahona{
+    background-image: url("../img/motif_vert.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 80px;
+    height: 82vmin;
+    display: grid;
+    justify-content: left;
+    margin: 0;
+}
+
+.couverture_asahona img{
+    height: 42vmin;
+}
+
+@media screen and (max-width: 950px){
+    .asahona{
+        display: block;
+    }
+    .asahona_right{
+        width: 95vw;
+        margin: auto;
+    }
+    .asahona_right .categories{
+        margin-bottom: 5rem;
+    }
+}

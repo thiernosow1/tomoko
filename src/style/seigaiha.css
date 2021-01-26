@@ -1,0 +1,30 @@
+.seigaiha_left{
+    margin: 0 0 0 3rem;
+}
+
+.couverture_seigaiha{
+    background-image: url("../img/motif_bleu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vmin;
+    display: grid;
+    justify-content: end;
+}
+.couverture_seigaiha img{
+    height: 76vmin;
+}
+.couverture_seigaiha p{
+    margin: 0 auto;
+    font-family: "Roboto";
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: right;
+    justify-self: first baseline;
+
+}
+@media screen and (max-width: 950px){
+    .seigaiha_left{
+        width: 95vw;
+        margin: auto;
+    }
+}

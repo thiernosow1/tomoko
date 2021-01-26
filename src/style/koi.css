@@ -1,0 +1,60 @@
+.global{
+    margin-bottom: 10rem;
+}
+.koi{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5rem;
+
+}
+.koi_left{
+    margin: 0 0 0 3rem;
+}
+.margin_bottom{
+    margin-bottom: 14rem;
+}
+
+.couverture_koi{
+    background-image: url("../img/elipse_rouge.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 81vmin;
+    display: grid;
+    justify-content: right;
+}
+.couverture_koi img{
+    height: 60vmin;
+}
+.saumon{
+    margin-right: 2rem;
+    font-family: "Roboto";
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: right;
+    width: fit-content;
+    justify-self: right;
+}
+
+.menu_defilant{
+    display: flex;
+    overflow: hidden;
+}
+
+.menu_defilant img{
+    height: 16vmin;
+}
+
+@media screen and (max-width: 950px){
+    .koi{
+        display: block;
+
+    }
+    .koi_left{
+        width: 95vw;
+        margin: auto;
+    }
+    .margin_bottom{
+        margin-bottom: 5rem;
+    }
+}

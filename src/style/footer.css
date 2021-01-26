@@ -1,0 +1,51 @@
+footer{
+    background-color: #2B2B2B;
+}
+.footer{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFBEF;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+#footer{
+    scroll-behavior: smooth;
+}
+
+.rs p{
+    font-family: "Roboto";
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.rs :nth-child(2){
+    margin-right: 2rem;
+}
+.adresse{
+    font-family: "Roboto";
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: right;
+}
+.adresse :nth-child(1){
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 640px){
+    .footer{
+        display: block;
+    }
+    .rs{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .adresse{
+        text-align: center;
+    }
+    .rs p, .adresse :nth-child(1){
+        margin-bottom: 1rem;
+    }
+}

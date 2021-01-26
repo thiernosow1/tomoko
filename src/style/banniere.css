@@ -1,0 +1,106 @@
+.banniere{
+    width: 95vw;
+    margin: 10rem 3rem 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .accroche{
+    margin-bottom: 7rem;
+  }
+    
+  .titre{
+    font-family: 'Chivo';
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    
+  }
+
+  .titre::first-line{
+    font-weight: 900;
+  }
+  .align_right{
+    text-align: right;
+  }
+  .align_left{
+    text-align: left;
+  }
+
+  .desc{
+    font-family: 'Roboto';
+    font-weight: 350;
+    font-size: 1.7rem;
+  }
+  .text_justify{
+    text-align: justify right;
+  }
+  .categories {
+    width: max-content;
+    padding: 1rem 0;
+    font-family: 'Chivo';
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black ;
+    
+  }
+
+  .nomDeCategorie{
+    margin: 1rem 0 0 0 ;
+    text-transform: uppercase;
+    font-family: "Chivo";
+    font-size: 2.5rem;
+  }
+
+
+  .descCategorie{
+    margin: 0;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-size: 1.8rem;
+
+  }
+  
+  .plats{
+    display: flex;
+    justify-content: space-between;
+  }
+  .plats span{
+    text-align: center;
+  }
+  
+  .plats span img{
+    height: 14vmin;
+  }
+
+  /* LEFT */
+  .photoBanniere{
+    background-image: url("../img/rondeSushi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 81vmin;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+  .picture{
+    height: 23vmin;
+  }
+  
+  @media screen and (max-width: 993px){
+    .banniere{
+        display: block;
+        margin: 10rem auto;
+    }
+  }
+
+  @media screen and (max-width: 510px){
+    .categories{
+      font-size: 2rem;
+    }
+    .nomDeCategorie{
+      font-size: 2rem;
+    }
+    .photoBanniere{
+      padding: 7rem;
+    }
+  }
